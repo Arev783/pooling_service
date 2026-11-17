@@ -1,4 +1,4 @@
-const pollService = require('../services/pollService');
+const pollService = require('../services/pollservice');
 
 async function createPoll(req, res, next) {
 try {

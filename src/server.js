@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const { pool } = require('./config/db');
-const pollRoutes = require('./routes/pollRoutes');
+const pollRoutes = require('./routes/pollroute');
 const errorHandler = require('./middlewares/errorHandler');
 const AppError = require('./utils/AppError');
 

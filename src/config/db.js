@@ -1,6 +1,10 @@
 require('dotenv').config();
 const { Pool } = require('pg');
 
+if (typeof process.env.DB_PASSWORD !== 'string' || process.env.DB_PASSWORD.length === 0) {
+throw new Error('Missing required database password: set DB_PASSWORD');
+}
+
 const pool = new Pool({
 host: process.env.DB_HOST,
 port: Number(process.env.DB_PORT),

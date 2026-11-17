@@ -1,5 +1,5 @@
 const express = require('express');
-const pollController = require('../controllers/pollController');
+const pollController = require('../controllers/pollControllers');
 const {
 validateCreatePoll,
 validatePollIdParam,
@@ -7,7 +7,7 @@ validateVoterIdParam,
 validateCastVote,
 validateChangeVote,
 validateClosePoll,
-} = require('../validators/pollValidator');
+} = require('../validators/pollvalidator');
 
 const router = express.Router();
 
